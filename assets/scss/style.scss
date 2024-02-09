@@ -1,15 +1,3 @@
-/* Theme Description
--------------------------------------------------
-
-	  Theme Name:
-	  Author:
-	  Support:
-	  Description:
-	  Version:
-	  
-------------------------------------------------- 
-*/
-
 /* CSS Index
 -------------------------------------------------
 
@@ -28,31 +16,30 @@
 */
 
 // Default
-	@import 'variables';
-	@import 'mixins';
-	@import 'overlay';
-	@import 'common';
-	@import 'color';
+@import "variables";
+@import "mixins";
+@import "overlay";
+@import "common";
+@import "color";
 
 // Homepage1
-	@import 'headerMenu';
-	@import 'h1-hero';
-	@import 'services_section';
-	@import 'gallery';
-	@import 'contact_form';
-	@import 'team';
-	@import 'contact_animal-owner';
-	@import 'testimonial';
-	@import 'footer';
-
+@import "headerMenu";
+@import "h1-hero";
+@import "services_section";
+@import "gallery";
+@import "contact_form";
+@import "team";
+@import "contact_animal-owner";
+@import "testimonial";
+@import "footer";
 
 // inner Page
-	@import 'services';
-	@import 'about-details';
+@import "services";
+@import "about-details";
 
 // Default Element Page
-	@import 'blog_page';
-	@import 'contact';
-	@import 'bradcam';
-	@import 'extend';
-	@import 'elements';
+@import "blog_page";
+@import "contact";
+@import "bradcam";
+@import "extend";
+@import "elements";
