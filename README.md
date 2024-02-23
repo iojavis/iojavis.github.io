@@ -1,1 +1,1 @@
-Website for Vokskoz Vet Service
+Website for VokskozVet Services
