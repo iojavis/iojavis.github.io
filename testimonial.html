@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Image Slider</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      /* Add any custom styles here */
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <!-- Your navbar code goes here -->
+    </header>
+    <main>
+
+        <div class="container">
+            <!-- Testimonial contents -->
+            <div class="row d-flex justify-content-center">
+                <h2 class="mb-40 text-white text-center">What our customers are saying</h2>
+        
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="h1-testimonial-active dot-style" id="testimonialSlider">
+                        <!-- JavaScript will dynamically populate testimonials here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            // Testimonial data
+            const testimonials = [
+                {
+                    name: "Samuel Ogenrwot",
+                    role: "IT Expert, Livestock farmer",
+                    image: "assets/img/gallery2/pro-sam.jpeg",
+                    quote: "Our livestock's health is our top priority. Thanks to the expertise and care provided by our vet, our animals thrive. Their dedication ensures our herd remains healthy and productive. Highly recommended!"
+                },
+                {
+                    name: "Sam Krick",
+                    role: "Pet Lover and businessman",
+                    image: "assets/img/gallery2/sam-krick.jpeg",
+                    quote: "Our beloved furry friend's well-being means the world to us. With our vet's exceptional care and expertise, our dog's health has never been better. Trustworthy, compassionate, and highly recommended for all dog owners!"
+                },
+                {
+                    name: "Simon Peter Olanya",
+                    role: "Farm Investor",
+                    image: "assets/img/gallery2/simon-peter-olanya.jpeg",
+                    quote: "As an agricultural investor, I extend sincere gratitude to Voskoz for their invaluable assistance in preserving the health and well-being of our farm's livestock, crucially enhancing our operations' success."
+                },
+                {
+                    name: "Isaac Javis Otim",
+                    role: "Poultry keeper, Student",
+                    image: "assets/img/gallery2/otim.jpg",
+                    quote: "Our poultry's health is paramount to our business. Thanks to our vet's diligent care and expertise, our flock remains robust and productive. Reliable, knowledgeable, and essential for any poultry keeper's success!"
+                }
+            ];
+        
+            // Function to render testimonials
+            function renderTestimonials() {
+                const testimonialSlider = document.getElementById('testimonialSlider');
+        
+                // Clear existing content
+                testimonialSlider.innerHTML = '';
+        
+                // Loop through testimonials and create HTML
+                testimonials.forEach((testimonial, index) => {
+                    const testimonialItem = document.createElement('div');
+                    testimonialItem.className = 'single-testimonial text-center';
+        
+                    const testimonialCaption = document.createElement('div');
+                    testimonialCaption.className = 'testimonial-caption';
+        
+                    const founderImg = document.createElement('div');
+                    founderImg.className = 'founder-img mb-40';
+                    founderImg.innerHTML = `<img src="${testimonial.image}" alt="" style="width: 90px; height: 90px; border-radius: 50%">`;
+        
+                    const founderDetails = document.createElement('div');
+                    founderDetails.innerHTML = `<span>${testimonial.name}</span><p>${testimonial.role}</p>`;
+        
+                    const testimonialTopCap = document.createElement('div');
+                    testimonialTopCap.className = 'testimonial-top-cap';
+                    testimonialTopCap.innerHTML = `<p>${testimonial.quote}</p>`;
+        
+                    founderImg.appendChild(founderDetails);
+                    testimonialCaption.appendChild(founderImg);
+                    testimonialCaption.appendChild(testimonialTopCap);
+                    testimonialItem.appendChild(testimonialCaption);
+        
+                    // Append testimonial to slider
+                    testimonialSlider.appendChild(testimonialItem);
+                });
+            }
+        
+            // Call renderTestimonials function initially
+            renderTestimonials();
+        
+            // Set interval to change testimonial every 10 seconds
+            setInterval(() => {
+                const firstTestimonial = testimonials.shift();
+                testimonials.push(firstTestimonial);
+                renderTestimonials();
+            }, 10000); // 10000 milliseconds = 10 seconds
+        </script>
+        
+     
+        </main>
+    <footer>
+      <!-- Your footer code goes here -->
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
