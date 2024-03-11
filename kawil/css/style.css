@@ -47,6 +47,9 @@ hr {
 .mb-30 {
   margin-bottom: 30px;
 }
+.mb-40-s {
+  margin: 40px auto;
+}
 
 /* Header Start */
 .header {
@@ -221,6 +224,7 @@ hr {
   cursor: pointer;
   margin: 15px 0;
   transition: 0.2s ease;
+  position: relative;
 }
 .product:hover {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
@@ -245,4 +249,151 @@ hr {
 .product__star {
   font-size: 12px;
   color: rgb(209, 232, 6);
+}
+.product__price {
+  padding-top: 7px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #094d33;
+}
+
+/* .fa-solid.fa-cart-shopping {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #d8d8d8;
+  font-weight: 500;
+  color: #094d33;
+  border: 1px solid #d8d8d8;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+} */
+.banner-discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1618172193763-c511deb635ca?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: center/cover no-repeat; */
+}
+.banner-discount h4 {
+  color: #fff;
+  font-size: 16px;
+}
+.banner-discount h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.banner-discount h2 span {
+  color: #a44a4a;
+}
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 0;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 10px 12px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 50vh;
+  background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+.banner-box.two {
+  background-image: url('https://images.unsplash.com/photo-1632560354926-21886c0e811c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.banner-box h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+}
+.banner-box h4 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.banner-box span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+.btn__premiere {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+  padding: 14px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.btn__premiere:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
