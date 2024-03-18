@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="One Stop Shop." />
+    <meta name="author" content="Isaac Javis Otim" />
+    <title>eShop | One Stop Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> eShop </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                  <i class="fas fa-shopping-bag"> </i>
+                  <span id="cartCount" class="badge badge-pill badge-danger">0</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Kan eShop</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus cum
+          eos dignissimos quisquam aspernatur sequi perspiciatis tempora blanditiis harum.
+        </p>
+      </div>
+    </div>
+
+    <section class="products mb-30">
+      <h2>New Products</h2>
+      <p>Fresh arrivals.</p>
+      <div class="listed-products container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1644879796743-32f929189b81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1649734927719-9ce8abaf042c?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1556037867-bc64ed32b2af?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1637069585336-827b298fe84a?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="product">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1691367279313-71af7ba83f2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="product__img"
+              />
+              <div class="product-description">
+                <span class="product__supplier">Supplier</span>
+                <h5 class="product__name">Product Name</h5>
+                <div class="product__rating star">
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                  <i class="product__star fa-regular fa-star"></i>
+                </div>
+                <h4 class="product__price">$90</h4>
+              </div>
+              <a href="#"><i class="product__bag-icon fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #1c2331"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: #6351ce"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">eShop</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nisi
+                sequi, iure et neque ut commodi quam mollitia illum. Dicta.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Electronics</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Fitness</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Fashion</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Home Furniture</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Cart</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Become a trader</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> Gulu, Uganda</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@eShop.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 256 771 234 567</p>
+              <p><i class="fas fa-print mr-3"></i> + 256 412 890 432</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="#">eShop</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

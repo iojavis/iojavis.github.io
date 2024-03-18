@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Buy anything." />
     <meta name="author" content="Isaac Javis Otim" />
-    <title>Kawil | One Stop Shop</title>
+    <title>eShop | One Stop Shop</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,74 +22,50 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- <section class="header">
-      <a href="#">
-        <img src="assets/img/logo.png" alt="logo" class="header__img" />
-      </a>
-      <div class="header__navbar__container">
-        <ul class="header__navbar">
-          <li class="navbar-nav__item">
-            <a class="navbar-nav__item__link active" href="#">Home</a>
-          </li>
-          <li class="navbar-nav__item">
-            <a class="navbar-nav__item__link" href="#">Shop</a>
-          </li>
-          <li class="navbar-nav__item">
-            <a class="navbar-nav__item__link" href="#">About</a>
-          </li>
-          <li class="navbar-nav__item">
-            <a class="navbar-nav__item__link" href="#">Contact</a>
-          </li>
-          <li class="navbar-nav__item">
-            <a class="navbar-nav__item__link" href="#"
-              ><i class="fa-solid fa-bag-shopping"></i
-            ></a>
-          </li>
-          <li class="navbar-nav__item">
-            <a class="navbar-nav__item__link" href="#"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </section> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Kawil</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="shop.html">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"> eShop </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html"
+                  ><i class="fas fa-shopping-bag">
+                    <span id="cartCount" class="badge badge-pill badge-danger">0</span>
+                  </i></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
 
     <section class="hero mb-30">
       <h4 class="hero__intro-text">Anything for you</h4>
@@ -104,27 +80,31 @@
       <div class="listed-products container">
         <div class="row">
           <div class="col-sm-6 col-md-3">
-            <div class="product">
-              <img
-                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                class="product__img"
-              />
-              <div class="product-description">
-                <span class="product__supplier">Supplier</span>
-                <h5 class="product__name">Product Name</h5>
-                <div class="product__rating star">
-                  <i class="product__star fa-regular fa-star"></i>
-                  <i class="product__star fa-regular fa-star"></i>
-                  <i class="product__star fa-regular fa-star"></i>
-                  <i class="product__star fa-regular fa-star"></i>
-                  <i class="product__star fa-regular fa-star"></i>
+            <a href="products/LG UltraFine UHD 27-Inch 4K UHD 2160p Computer Monitor 27UN850-W, IPS with VESA DisplayHDR 400, AMD FreeSync, and USB-C, White,Silver.html">
+              <div class="product">
+                <img
+                  src="https://m.media-amazon.com/images/I/714aVOYqLTL._AC_SL1500_.jpg"
+                  alt=""
+                  class="product__img"
+                />
+                <div class="product-description">
+                  <span class="product__supplier">NetNinja</span>
+                  <h5 class="product__name">LG UltraFine UHD 27-Inch 4K UHD</h5>
+                  <div class="product__rating star">
+                    <i class="product__star fa-regular fa-star"></i>
+                    <i class="product__star fa-regular fa-star"></i>
+                    <i class="product__star fa-regular fa-star"></i>
+                    <i class="product__star fa-regular fa-star"></i>
+                    <i class="product__star fa-regular fa-star"></i>
+                  </div>
+                  <h4 class="product__price">$399</h4>
                 </div>
-                <h4 class="product__price">$90</h4>
+
+                <i class="add-to-cart fa-solid fa-cart-shopping"></i>
               </div>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+            </a>
           </div>
+
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
@@ -166,7 +146,7 @@
                 </div>
                 <h4 class="product__price">$90</h4>
               </div>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <i class="add-to-cart fa-solid fa-cart-shopping"></i>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
@@ -187,7 +167,7 @@
                   <i class="product__star fa-regular fa-star"></i>
                 </div>
                 <h4 class="product__price">$90</h4>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <i class="add-to-cart fa-solid fa-cart-shopping"></i>
               </div>
             </div>
           </div>
@@ -297,7 +277,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1586062129117-08db958ba215?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -319,7 +299,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -341,7 +321,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://plus.unsplash.com/premium_photo-1676717962720-d9a812c8f8c9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -363,7 +343,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -385,7 +365,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1539628399213-d6aa89c93074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -407,7 +387,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1706769295126-6d468860ff08?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -429,7 +409,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1563450217452-f6181937dcab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1542838776-096d877b5aa2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -451,7 +431,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="product">
               <img
-                src="https://images.unsplash.com/photo-1613218222876-954978a4404e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1612552441157-a0efa6d4f15c?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="product__img"
               />
@@ -502,32 +482,6 @@
         </div>
       </div>
     </section>
-
-    <section class="sm-banner-small mb-40-s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="banner-box">
-              <h2>Crazy deals</h2>
-              <h4>Buy 2, get 1 free.</h4>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="banner-box">
-              <h2>Crazy deals</h2>
-              <h4>Buy 2, get 1 free.</h4>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="banner-box">
-              <h2>Crazy deals</h2>
-              <h4>Buy 2, get 1 free.</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer
       class="text-center text-lg-start text-white"
@@ -577,7 +531,7 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold">KAWIL</h6>
+              <h6 class="text-uppercase fw-bold">eShop</h6>
               <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px"
@@ -644,7 +598,7 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
               />
               <p><i class="fas fa-home mr-3"></i> Gulu, Uganda</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@kawil.com</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@eShop.com</p>
               <p><i class="fas fa-phone mr-3"></i> + 256 771 234 567</p>
               <p><i class="fas fa-print mr-3"></i> + 256 412 890 432</p>
             </div>
@@ -658,12 +612,13 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2024 Copyright:
-        <a class="text-white" href="#">Kawil</a>
+        <a class="text-white" href="#">eShop</a>
       </div>
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
 
+    <script src="cart.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
