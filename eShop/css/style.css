@@ -234,6 +234,7 @@ hr {
 
 .product__img {
   width: 100%;
+  height: auto;
 }
 
 .product__supplier {
@@ -245,6 +246,12 @@ hr {
   font-size: 14px;
   padding-top: 7px;
   color: #1a1a1a;
+  height: 60px;
+  overflow: hidden;
+}
+
+.product__card-a:hover {
+  text-decoration: none;
 }
 
 .product__star {
@@ -269,6 +276,12 @@ hr {
   bottom: 20px;
   right: 10px;
 }
+.fa-solid.fa-cart-shopping:hover,
+.fa-solid.fa-cart-shopping:active {
+  background-color: #78817e;
+  cursor: pointer;
+}
+
 .banner-discount {
   display: flex;
   flex-direction: column;
@@ -423,4 +436,11 @@ hr {
   width: 60px;
   height: 50px;
   margin-right: 20px;
+}
+
+.rounded-column {
+  /* border-radius: 15px; */
+  border: 1px solid #ced4da;
+  padding: 25px;
+  text-align: center;
 }

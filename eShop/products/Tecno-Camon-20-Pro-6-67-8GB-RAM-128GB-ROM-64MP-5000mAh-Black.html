@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product details here." />
+    <meta name="author" content="Isaac Javis Otim" />
+    <title>eShop | One Stop Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"> eShop </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../cart.html"
+                  ><i class="fas fa-shopping-bag"></i>
+                  <span id="cartCount" class="badge badge-pill badge-danger">0</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="single-product-details mb-40-s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 product-info-large">
+            <img
+              src="https://ug.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/42/1510701/2.jpg?3987"
+              alt="product image"
+              srcset=""
+              style="width: 100%"
+              id="main-product-image"
+            />
+            <div class="small-img-group mb-40-s">
+              <div class="small-img-col">
+                <img
+                  src="https://ug.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/42/1510701/2.jpg?3987"
+                  alt=""
+                  srcset=""
+                  style="width: 100%"
+                  onclick="changeProductImage(this)"
+                />
+              </div>
+              <div class="small-img-col">
+                <img
+                  src="https://ug.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/42/1510701/3.jpg?3987"
+                  alt=""
+                  srcset=""
+                  style="width: 100%"
+                  onclick="changeProductImage(this)"
+                />
+              </div>
+              <div class="small-img-col">
+                <img
+                  src="https://ug.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/42/1510701/4.jpg?3987"
+                  alt=""
+                  srcset=""
+                  style="width: 100%"
+                  onclick="changeProductImage(this)"
+                />
+              </div>
+              <div class="small-img-col">
+                <img
+                  src="https://ug.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/1510701/1.jpg?3987"
+                  alt=""
+                  srcset=""
+                  style="width: 100%"
+                  onclick="changeProductImage(this)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h6>Electronics/Smartphones</h6>
+            <h4 class="buy-product__name">
+              Tecno Camon 20 Pro 6.67'' 8GB RAM 128GB ROM 64MP 5000mAh - Black
+            </h4>
+            <h2 class="buy-product__price">$251.44</h2>
+            <br />
+            <h6>Select Quantity</h6>
+            <input type="number" value="1" name="" class="order-quantity" />
+            <button type="button" class="add-to-cart btn btn-success">Add to Cart</button>
+            <br />
+            <br />
+
+            <h4>About this product</h4>
+
+            <ul>
+              <li>
+                <p>
+                  Tecno has officially launched the new Tecno Camon 20 series and that
+                  includes the Camon 20, Camon 20 Pro, Camon 20 Pro 5G, and Camon 20
+                  Premier. The devices are coming with the same design and display setup.
+                  So let’s get into the article to check out what the devices offer out of
+                  the box.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The latest Tecno Camon 20 series is coming with the same design with a
+                  unique pentagonal-shaped camera island on the back panel and the devices
+                  are also coming with geometric pattern design as well. The devices are
+                  coming with a 6.67-inch AMOLED display along with an FHD+ resolution and
+                  a 120Hz refresh rate. The smartphone series features an in-screen
+                  fingerprint scanner for an additional layer of security
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container">
+            <ul>
+              <li>
+                <p>
+                  Speaking about the camera department, the Tecno Camon 20 and Camon 20
+                  Pro feature a 64MP primary sensor along with a 2MP macro sensor and an
+                  AI lens. The Camon 20 Pro 5G also features the same primary as well as
+                  macro lenses but the third unit is 2MP bokeh and the main sensor also
+                  supports OIS. On the other hand, the Camon 20 Premier smartphone
+                  features a 50MP RGBW main sensor with sensor-shift OIS, a 108MP
+                  ultra-wide and macro lens, and a 2MP bokeh unit with octa-ring flash.
+                  The latest Tecno Camon 20 series features a 32MP selfie camera.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Under the hood, the Tecno Camon 20 and 20 Pro smartphones are coming
+                  with the power of the MediaTek Helio G85 and G99 chipsets respectively.
+                  The 5G model is coming with the power of the newly announced Dimensity
+                  8050 mobile processor and the Camon 20 Premier is also powered by the
+                  same chipset as the Camon 20 Pro 5G. All the devices are coming with 8GB
+                  RAM along with 8GB virtual RAM and 256GB internal storage but the Camon
+                  20 Premier is coming with 512GB storage. The smartphone series is also
+                  having a heat dissipation system.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 rounded-column">
+                <h4>KEY FEATURES</h4>
+                <ul>
+                  <li>NETWORK Technology: GSM / HSPA / LTE</li>
+                  <li>SIM: Dual SIM (Nano-SIM, dual stand-by)</li>
+                  <li>Size: 6.67 inches, 105.6 cm2</li>
+                  <li>PLATFORM: OS Android 13, HIOS 13</li>
+                  <li>Internal: 128GB 8GB RAM</li>
+                  <li>MAIN CAMERA Triple: 64 MP</li>
+                  <li>USB: USB Type-C 2.0, OTG</li>
+                  <li>BATTERY: Type Li-Po 5000 mAh, non-removable</li>
+                </ul>
+              </div>
+              <div class="col-md-4 rounded-column">
+                <h4>WHAT'S IN THE BOX</h4>
+                <ul>
+                  <li>Phone</li>
+                  <li>Charger</li>
+                  <li>Manual</li>
+                </ul>
+              </div>
+              <div class="col-md-4 rounded-column">
+                <h4>SPECIFICATIONS</h4>
+                <li>SKU: <strong>TE339MP2CMSGUNAFAMZ</strong></li>
+                <li><strong>Weight (kg):</strong>0.1</li>
+                <li><strong>Color: </strong>Black</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #1c2331"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: #6351ce"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">eShop</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nisi
+                sequi, iure et neque ut commodi quam mollitia illum. Dicta.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Electronics</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Fitness</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Fashion</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Home Furniture</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Cart</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Become a trader</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> Gulu, Uganda</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@eShop.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 256 771 234 567</p>
+              <p><i class="fas fa-print mr-3"></i> + 256 412 890 432</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const addToCartButtons = document.querySelectorAll('.add-to-cart');
+          addToCartButtons.forEach((button) => {
+            button.addEventListener('click', function () {
+              const productName = document
+                .querySelector('.buy-product__name')
+                .textContent.trim();
+              const productPrice = parseFloat(
+                document
+                  .querySelector('.buy-product__price')
+                  .textContent.replace('$', '')
+                  .trim()
+              );
+              const quantity = parseInt(document.getElementById('order-quantity').value);
+
+              const item = {
+                productName: productName,
+                price: productPrice,
+                quantity: quantity,
+              };
+
+              // Get existing cart items from local storage
+              let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+              // Check if item already exists in cart
+              const existingItemIndex = cartItems.findIndex(
+                (cartItem) => cartItem.productName === productName
+              );
+              if (existingItemIndex !== -1) {
+                // If item already exists, update its quantity
+                cartItems[existingItemIndex].quantity += quantity;
+              } else {
+                // If item does not exist, add it to cart
+                cartItems.push(item);
+              }
+
+              // Update local storage with new cart items
+              localStorage.setItem('cart', JSON.stringify(cartItems));
+
+              // Update cart count
+              updateCartCount();
+            });
+          });
+
+          // Function to update cart count
+          function updateCartCount() {
+            const cartCountElement = document.getElementById('cartCount');
+            cartCountElement.textContent = getCartItemCount();
+          }
+
+          // Function to get cart item count
+          function getCartItemCount() {
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            return cartItems.length;
+          }
+
+          // Initialize cart count
+          updateCartCount();
+        });
+      </script> -->
+
+      <!-- <script>
+        var cart = [];
+        function changeProductImage(img) {
+          var mainProductImage = document.getElementById('main-product-image');
+          mainProductImage.src = img.src;
+        }
+
+        function addToCart() {
+          var selectedQuantity = document.getElementById('order-quantity').value;
+          var productName = document.querySelector('.buy-product__name').innerText;
+          var productPrice = document.querySelector('.buy-product__price').innerText;
+
+          var item = {
+            name: productName,
+            price: productPrice,
+            quantity: selectedQuantity,
+          };
+
+          cart.push(item);
+        }
+      </script> -->
+
+      <script src="../cart.js"></script>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="#">eShop</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
