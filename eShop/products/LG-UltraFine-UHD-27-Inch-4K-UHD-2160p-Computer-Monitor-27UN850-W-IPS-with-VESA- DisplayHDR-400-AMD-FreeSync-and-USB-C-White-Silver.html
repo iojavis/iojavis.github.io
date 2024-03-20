@@ -25,7 +25,7 @@
 
   <body>
     <section class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="../index.html"> eShop </a>
           <button
@@ -121,18 +121,11 @@
           </div>
           <div class="col-md-6">
             <h6>Electronics/Monitors</h6>
-            <h4 class="buy-product__name product__name">
+            <h4 class="product__name product__name">
               LG UltraFine UHD 27-Inch 4K UHD 2160p Computer Monitor 27UN850-W, IPS with
               VESA DisplayHDR 400, AMD FreeSync, and USB-C, White,Silver
             </h4>
-            <h2 class="buy-product__price">$399</h2>
-            <select class="form-control">
-              <option>Select Size</option>
-              <option>27"</option>
-              <option>32"</option>
-              <option>40"</option>
-              <option>52"</option>
-            </select>
+            <h2 class="product__price">$399</h2>
             <br />
             <h6>Select Quantity</h6>
             <input type="number" value="1" name="" id="order-quantity" />
@@ -311,87 +304,11 @@
         </div>
       </section>
       <!-- Section: Links  -->
-      <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const addToCartButtons = document.querySelectorAll('.add-to-cart');
-          addToCartButtons.forEach((button) => {
-            button.addEventListener('click', function () {
-              const productName = document
-                .querySelector('.buy-product__name')
-                .textContent.trim();
-              const productPrice = parseFloat(
-                document
-                  .querySelector('.buy-product__price')
-                  .textContent.replace('$', '')
-                  .trim()
-              );
-              const quantity = parseInt(document.getElementById('order-quantity').value);
-
-              const item = {
-                productName: productName,
-                price: productPrice,
-                quantity: quantity,
-              };
-
-              // Get existing cart items from local storage
-              let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-
-              // Check if item already exists in cart
-              const existingItemIndex = cartItems.findIndex(
-                (cartItem) => cartItem.productName === productName
-              );
-              if (existingItemIndex !== -1) {
-                // If item already exists, update its quantity
-                cartItems[existingItemIndex].quantity += quantity;
-              } else {
-                // If item does not exist, add it to cart
-                cartItems.push(item);
-              }
-
-              // Update local storage with new cart items
-              localStorage.setItem('cart', JSON.stringify(cartItems));
-
-              // Update cart count
-              updateCartCount();
-            });
-          });
-
-          // Function to update cart count
-          function updateCartCount() {
-            const cartCountElement = document.getElementById('cartCount');
-            cartCountElement.textContent = getCartItemCount();
-          }
-
-          // Function to get cart item count
-          function getCartItemCount() {
-            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-            return cartItems.length;
-          }
-
-          // Initialize cart count
-          updateCartCount();
-        });
-      </script> -->
-
+      
       <script>
-        var cart = [];
         function changeProductImage(img) {
           var mainProductImage = document.getElementById('main-product-image');
           mainProductImage.src = img.src;
-        }
-
-        function addToCart() {
-          var selectedQuantity = document.getElementById('order-quantity').value;
-          var productName = document.querySelector('.buy-product__name').innerText;
-          var productPrice = document.querySelector('.buy-product__price').innerText;
-
-          var item = {
-            name: productName,
-            price: productPrice,
-            quantity: selectedQuantity,
-          };
-
-          cart.push(item);
         }
       </script>
 
